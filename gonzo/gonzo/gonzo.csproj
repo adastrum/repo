@@ -44,8 +44,13 @@
     <Compile Include="Patterns\Builder\Builder.cs" />
     <Compile Include="Patterns\Builder\Director.cs" />
     <Compile Include="Patterns\Builder\Product.cs" />
+    <Compile Include="Patterns\Facade\Facade.cs" />
     <Compile Include="Patterns\Prototype\Client.cs" />
     <Compile Include="Patterns\Prototype\Prototype.cs" />
+    <Compile Include="Patterns\Proxy\Subject.cs" />
+    <Compile Include="Patterns\State\Context.cs" />
+    <Compile Include="Patterns\State\State.cs" />
+    <Compile Include="Patterns\TemplateMethod\AbstractClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -53,18 +58,18 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Patterns\Builder\BuilderDiagram.cd" />
+    <None Include="Patterns\Facade\FacadeDiagram.cd" />
     <None Include="Patterns\Prototype\PrototypeDiagram.cd" />
+    <None Include="Patterns\Proxy\ProxyDiagram.cd" />
+    <None Include="Patterns\State\StateDiagram.cd" />
+    <None Include="Patterns\TemplateMethod\TemplateMethodDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Algorithms\" />
     <Folder Include="DataStructures\" />
     <Folder Include="Patterns\ChainOfResponsibility\" />
-    <Folder Include="Patterns\Facade\" />
     <Folder Include="Patterns\Flyweight\" />
     <Folder Include="Patterns\Mediator\" />
-    <Folder Include="Patterns\Proxy\" />
-    <Folder Include="Patterns\State\" />
-    <Folder Include="Patterns\TemplateMethod\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

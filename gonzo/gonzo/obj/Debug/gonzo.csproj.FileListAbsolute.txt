@@ -4,3 +4,9 @@ c:\users\acer\documents\visual studio 2012\Projects\gonzo\gonzo\bin\Debug\gonzo.
 c:\users\acer\documents\visual studio 2012\Projects\gonzo\gonzo\obj\Debug\gonzo.csprojResolveAssemblyReference.cache
 c:\users\acer\documents\visual studio 2012\Projects\gonzo\gonzo\obj\Debug\gonzo.exe
 c:\users\acer\documents\visual studio 2012\Projects\gonzo\gonzo\obj\Debug\gonzo.pdb
+C:\Users\acer\Documents\GitHub\repo\gonzo\gonzo\bin\Debug\gonzo.exe.config
+C:\Users\acer\Documents\GitHub\repo\gonzo\gonzo\obj\Debug\gonzo.exe
+C:\Users\acer\Documents\GitHub\repo\gonzo\gonzo\obj\Debug\gonzo.pdb
+C:\Users\acer\Documents\GitHub\repo\gonzo\gonzo\bin\Debug\gonzo.exe
+C:\Users\acer\Documents\GitHub\repo\gonzo\gonzo\bin\Debug\gonzo.pdb
+C:\Users\acer\Documents\GitHub\repo\gonzo\gonzo\obj\Debug\gonzo.csprojResolveAssemblyReference.cache
