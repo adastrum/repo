@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataStructures\StackArray.cs" />
+    <Compile Include="DataStructures\StackLinkedList.cs" />
     <Compile Include="Patterns\Builder\Builder.cs" />
     <Compile Include="Patterns\Builder\Director.cs" />
     <Compile Include="Patterns\Builder\Product.cs" />
@@ -73,7 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Algorithms\" />
-    <Folder Include="DataStructures\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
