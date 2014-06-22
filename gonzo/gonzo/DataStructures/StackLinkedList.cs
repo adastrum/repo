@@ -1,6 +1,9 @@
-﻿namespace gonzo.DataStructures
+﻿using System.Collections;
+using System.Collections.Generic;
+
+namespace gonzo.DataStructures
 {
-    class StackLinkedList<T>
+    class StackLinkedList<T> : IEnumerable<T>
     {
         private class Node
         {
@@ -36,6 +39,21 @@
         public StackLinkedList()
         {
 
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            var node = _first;
+            while (node != null)
+            {
+                yield return node.Item;
+                node = node.Next;
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
     }
 }
