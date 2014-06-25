@@ -1,9 +1,23 @@
-﻿using System;
-
-namespace gonzo.Algorithms
+﻿namespace gonzo.Algorithms
 {
     class SortHelper
     {
+        private static int Partition(int[] array, int min, int max)
+        {
+            var marker = min;
+            for (var i = min; i <= max; i++)
+            {
+                if (array[i] <= array[max])
+                {
+                    var temp = array[marker];
+                    array[marker] = array[i];
+                    array[i] = temp;
+                    marker++;
+                }
+            }
+            return marker - 1;
+        }
+
         public static void BubbleSort(int[] array)
         {
             for (var i = 0; i < array.Length; i++)
@@ -22,24 +36,13 @@ namespace gonzo.Algorithms
 
         public static void QuickSort(int[] array, int min, int max)
         {
-            var i = min;
-            var j = max;
-            var middle = array[(i + j) / 2];
-            while (i <= j)
+            if (min >= max)
             {
-                while (array[i] < middle) i++;
-                while (array[j] > middle) j--;
-                if (i <= j)
-                {
-                    var temp = array[i];
-                    array[i] = array[j];
-                    array[j] = temp;
-                    i++;
-                    j--;
-                }
+                return;
             }
-            if (j > min) QuickSort(array, min, j);
-            if (i < max) QuickSort(array, i, max);
+            var pivot = Partition(array, min, max);
+            QuickSort(array, min, pivot - 1);
+            QuickSort(array, pivot + 1, max);
         }
 
         public static void InsertSort(int[] array)

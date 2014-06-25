@@ -107,8 +107,8 @@ namespace gonzo
             Console.WriteLine("before sort");
             PrintArray(array);
             //SortHelper.BubbleSort(array);
-            //SortHelper.QuickSort(array, 0, ArrayLength - 1);
-            SortHelper.InsertSort(array);
+            SortHelper.QuickSort(array, 0, ArrayLength - 1);
+            //SortHelper.InsertSort(array);
             Console.WriteLine();
             Console.WriteLine("after sort");
             PrintArray(array);
