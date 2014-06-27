@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using gonzo.Algorithms;
 
 namespace gonzo
@@ -33,7 +34,7 @@ namespace gonzo
 
         static void Main()
         {
-            SortDemo();
+            StringBuilderDemo();
             Console.ReadLine();
         }
 
@@ -112,6 +113,15 @@ namespace gonzo
             Console.WriteLine();
             Console.WriteLine("after sort");
             PrintArray(array);
+        }
+
+        public static void StringBuilderDemo()
+        {
+            var sb = new StringBuilder();
+            sb.AppendFormat("date: {0}", DateTime.Today.ToShortDateString());
+            sb.AppendLine();
+            sb.AppendFormat("time: {0}", DateTime.Now.ToShortTimeString());
+            Console.WriteLine(sb.ToString());
         }
     }
 }
