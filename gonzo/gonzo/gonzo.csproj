@@ -65,8 +65,11 @@
     <Compile Include="Patterns\State\State.cs" />
     <Compile Include="Patterns\TemplateMethod\AbstractClass.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Program_AlgorithmsAndDataStructures.cs" />
+    <Compile Include="Program_FCL.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Threading\Foo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
